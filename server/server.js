@@ -10,9 +10,9 @@ app.use((req, res, next) => {
 
 
 
-// app.get('/', (req, res) => {
-//     res.send('hellow world');
-// });
+app.get('/', (req, res) => {
+    res.send('hello from the web server side');
+});
 
 app.use(express.static(path.join(__dirname, '../public')));
 
