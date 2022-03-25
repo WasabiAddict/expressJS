@@ -4,7 +4,8 @@ const fs = require('fs');
 let app = express();
 
 app.use((req, res, next) => {
-    fs.appendFileSync('log.txt', `${req.url}\n`);
+    console.log(req.url);
+    // console.log(req.originalUrl);
     next();
 });
 
